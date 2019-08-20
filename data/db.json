@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "name": "My favorite fruits",
+      "display_name": "fruits",
+      "description": "There are some FRUITs here",
+      "_id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Apple",
+      "display_name": "apple",
+      "description": "There are some apples here",
+      "_id": 1
+    },
+    {
+      "name": "Orange",
+      "display_name": "orange",
+      "description": "There are some oranges here",
+      "_id": 2
+    }
+  ]
+}

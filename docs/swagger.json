@@ -1,0 +1,172 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Core API",
+    "description": "The worlds funnest little API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000/"
+    }
+  ],
+  "paths": {
+    "/categories": {
+      "get": {
+        "description": "Get all categories",
+        "responses": {
+          "200": {
+            "description": "Returned a list of categories",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAll"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "create categories",
+        "responses": {
+          "200": {
+            "description": "created a category",
+            "content": {
+              "*/*": {
+                
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products":{
+      "get": {
+        "description": "Get all products",
+        "responses": {
+          "200": {
+            "description": "Returned a list of products",
+            "content": {
+              "*/*": {
+                
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "create products",
+        "responses": {
+          "200": {
+            "description": "created a product",
+            "content": {
+              "*/*": {
+                
+              }
+            }
+          }
+        }
+      }
+    },
+      
+    
+    "/categories/{id}": {
+      "get": {
+        "description": "Get all categories with that id",
+        "responses": {
+          "200": {
+            "description": "Returned a list of categories",
+            "content": {
+              "*/*": {
+                
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "update categories with that id",
+        "responses": {
+          "200": {
+            "description": "update categories with that id",
+            "content": {
+              "*/*": {
+                
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "delete the categories with that id",
+        "responses": {
+          "200": {
+            "description": "Delete a list of categories",
+            "content": {
+              "*/*": {
+                
+              }
+            }
+          }
+        }
+      }
+    },
+    
+    "/products/{id}": {
+      "get": {
+        "description": "Get all products with that id",
+        "responses": {
+          "200": {
+            "description": "Returned a list of products",
+            "content": {
+              "*/*": {
+                
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "update products with that id",
+        "responses": {
+          "200": {
+            "description": "update products with that id",
+            "content": {
+              "*/*": {
+                
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "delete the products with that id",
+        "responses": {
+          "200": {
+            "description": "Delete a list of products",
+            "content": {
+              "*/*": {
+                
+              }
+            }
+          }
+        }
+      }
+    
+    }
+    
+  },
+  
+  "components": {
+    "schemas": {
+      "getAll": {
+        "type": "object",
+        "example": [
+          "{}",
+          "{}"
+        ]
+      }
+    }
+  }
+}
